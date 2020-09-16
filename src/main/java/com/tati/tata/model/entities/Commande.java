@@ -14,4 +14,5 @@ public class Commande {
 
     private List<Menu> toutLesMenus;
     private Client client;
+    private LocalDate DateCommande;
 }
