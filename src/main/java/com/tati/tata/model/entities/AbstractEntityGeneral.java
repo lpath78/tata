@@ -14,11 +14,12 @@ import java.util.UUID;
 @ToString(of = "id")
 @EqualsAndHashCode(of = "id")
 @SuppressWarnings("serial")
-@NoArgsConstructor
 public class AbstractEntityGeneral implements Serializable {
 
     @Getter
     @Id
-    private final UUID id = UUID.randomUUID();
-
+    private String id;
+    public AbstractEntityGeneral(){
+        this.id = UUID.randomUUID().toString();
+    }
 }

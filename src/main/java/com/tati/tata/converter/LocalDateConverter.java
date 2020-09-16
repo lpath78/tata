@@ -1,10 +1,17 @@
 package com.tati.tata.converter;
 
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.AttributeConverter;
+import javax.persistence.Converter;
 import java.sql.Date;
 import java.time.LocalDate;
 
-public class LocalThatConverter implements AttributeConverter<LocalDate, Date> {
+
+@Component
+@NoArgsConstructor
+public class LocalDateConverter implements AttributeConverter<LocalDate, Date> {
     // On a converti une local date en sql
     @Override
     public Date convertToDatabaseColumn(LocalDate arg0) {
