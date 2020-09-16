@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.UUID;
@@ -17,6 +18,7 @@ import java.util.UUID;
 public class AbstractEntityGeneral implements Serializable {
 
     @Getter
+    @Id
     private final UUID id = UUID.randomUUID();
 
 }

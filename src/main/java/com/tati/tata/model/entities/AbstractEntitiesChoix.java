@@ -10,7 +10,7 @@ import java.io.Serializable;
 @MappedSuperclass
 @SuppressWarnings("serial")
 @NoArgsConstructor
-public class AbstractEntitiesChoix implements Serializable extends AbstractEntityGeneral{
+public class AbstractEntitiesChoix  extends AbstractEntityGeneral implements Serializable{
     @Getter
     @Setter
     private String Nom;
