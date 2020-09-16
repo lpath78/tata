@@ -2,7 +2,7 @@ package com.tati.tata.model.entities;
 
 import antlr.collections.List;
 import lombok.NoArgsConstructor;
-
+import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 

@@ -1,5 +1,6 @@
 package com.tati.tata.model.entities;
 
+import com.tati.tata.model.references.TypeMenu;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
