@@ -16,5 +16,5 @@ public class AbstractEntitiesChoix  extends AbstractEntityGeneral implements Ser
     private String Nom;
     @Getter
     @Setter
-    private float prix;
+    private BigDecimal prix;
 }
